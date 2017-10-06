@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /about.html
+Disallow: /contact.html
+Disallow: /about/*
+Disallow: /contact/*
+Disallow: /about
+Disallow: /contact
+
+Sitemap: https://smeso.it/sitemap.xml

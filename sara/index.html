@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<link rel="preload" href="/theme/fonts/fontawesome-webfont.woff2" as="font" crossOrigin="anonymous">
+<link rel="preload" href="/theme/fonts/oswald-v14-latin-regular.woff2" as="font" crossOrigin="anonymous">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>S.A.R.A. LSM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="S.A.R.A. (S.A.R.A. is Another Recursive Acronym) is a stacked Linux Security Module that aims to collect heterogeneous security measures, providing a common interface to manage them. Like W^X enforcement, W!->X mprotect restriction and Executable MMAP prevention.">
+<link rel="shortcut icon" href="https://smeso.it//favicon.png" type="image/png">
+<meta name="author" content="smeso">
+<meta name="copyright" content="smeso">
+<meta name="keywords" content="lsm, sara, linux, documentation, smeso, security, mprotect, mmap, W^X, W!->X, pax, grsecurity">
+<meta name="twitter:card" content="summary" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="smeso" />
+<meta property="og:title" content="S.A.R.A. LSM" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://smeso.it/sara" />
+<meta name="twitter:url" content="https://smeso.it/sara" />
+<meta itemprop="url" content="https://smeso.it/sara"/>
+<meta property="og:image" content="/favicon.png" />
+<meta property="og:image:type" content="image/png" />
+<meta name="twitter:image" content="/favicon.png" />
+<meta itemprop="image" content="https://smeso.it//favicon.png"/>
+<meta property="og:description" content="S.A.R.A. (S.A.R.A. is Another Recursive Acronym) is a stacked Linux Security Module that aims to collect heterogeneous security measures, providing a common interface to manage them. Like W^X enforcement, W!->X mprotect restriction and Executable MMAP prevention." />
+<meta name="twitter:description" content="S.A.R.A. (S.A.R.A. is Another Recursive Acronym) is a stacked Linux Security Module that aims to collect heterogeneous security measures, providing a common interface to manage them. Like W^X enforcement, W!->X mprotect restriction and Executable MMAP prevention." />
+<meta itemprop="description" content="S.A.R.A. (S.A.R.A. is Another Recursive Acronym) is a stacked Linux Security Module that aims to collect heterogeneous security measures, providing a common interface to manage them. Like W^X enforcement, W!->X mprotect restriction and Executable MMAP prevention."/>
+<link href="https://smeso.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="smeso ATOM Feed"/>
+<link href="https://smeso.it/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="smeso RSS Feed"/>
+<link href='https://smeso.it/theme/css/Open+Sans:800italic.css' rel='stylesheet' type='text/css'>
+<link href='https://smeso.it/theme/css/Oswald.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://smeso.it/theme/css/uikit.min.css">
+<link rel="stylesheet" href="https://smeso.it/theme/css/solarized.css">
+<link rel="stylesheet" href="https://smeso.it/theme/css/main.css">
+
+<script src="https://smeso.it/theme/js/html5shiv.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<header class=" mg-header uk-navbar uk-navbar-attached">
+
+    <div class="uk-container uk-container-center">
+
+        <a class="mg-brand uk-navbar-brand uk-hidden-small" href="https://smeso.it">smeso</a>
+        <div class="mg-tagline uk-navbar-content uk-hidden-small"></div>
+        <a class="uk-navbar-toggle uk-visible-small" href="#mg-offcanvas" data-uk-offcanvas></a>
+        <a class="mg-brand uk-navbar-brand uk-navbar-center uk-visible-small" href="https://smeso.it">smeso</a>
+
+    </div>
+</header>
+
+<main class="mg-main">
+
+<div class="uk-container uk-container-center">
+
+    <div class="uk-grid" data-uk-grid-margin>
+
+<div class="uk-width-medium-4-5">
+    <h1 class="uk-heading-large" itemprop="name">S.A.R.A. LSM</h1>
+
+
+    <p><strong>S.A.R.A.</strong> (<strong>S.A.R.A. is Another Recursive Acronym</strong>) is a stacked Linux Security
+Module that aims to collect heterogeneous security measures, providing a common
+interface to manage them.</p>
+<p>The kernel-space part is complemented by its user-space counterpart: <cite>saractl</cite>.
+A test suite for WX Protection, called <cite>sara-test</cite>, is also available.
+More information about where to find these tools and the full S.A.R.A.
+documentation can be found at <a class="reference external" href="https://sara.smeso.it">https://sara.smeso.it</a>.</p>
+
+</div>
+
+        <div class="uk-width-medium-1-5 uk-hidden-small">
+
+            <div class="uk-panel uk-panel-box">
+                <ul class="uk-nav uk-nav-side">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog_index.html">Blog</a></li>
+                    <li><a href="https://sara.smeso.it">SARA</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="uk-panel uk-panel-box">
+                <ul class="uk-nav uk-nav-side">
+                   <li><a href="https://smeso.it/categories.html">Categories</a></li>
+                   <li><a href="https://smeso.it/tags.html">Tags</a></li>
+                </ul>
+            </div>
+
+
+            <!--sse-->
+            <div class="uk-panel uk-panel-box">
+                <ul class="uk-nav" data-uk-nav>
+                <li><a class="mg-icon-link" target="_blank" rel="noopener noreferrer" href="https://github.com/smeso">
+                    <i class="uk-icon-github uk-icon-medium"></i> GitHub
+                </a></li>
+                <li><a class="mg-icon-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/smesoraca">
+                    <i class="uk-icon-twitter uk-icon-medium"></i> Twitter
+                </a></li>
+                <li><a class="mg-icon-link" target="_blank" rel="noopener noreferrer" href="https://reddit.com/u/smesoraca">
+                    <i class="uk-icon-reddit uk-icon-medium"></i> Reddit
+                </a></li>
+                <li><a class="mg-icon-link" target="_blank" rel="noopener noreferrer" href="https://keybase.io/smeso">
+                    <i class="uk-icon-user uk-icon-medium"></i> Keybase
+                </a></li>
+                <li><a class="mg-icon-link" href="/contact">
+                    <i class="uk-icon-envelope uk-icon-medium"></i> E-Mail
+                </a></li>
+                <li><a rel="alternate" type="application/atom+xml" href="https://smeso.it/feeds/all.atom.xml" class="mg-feed"><i class="uk-icon-rss uk-icon-medium"></i> ATOM</a></li>
+                <li><a rel="alternate" type="application/rss+xml" href="https://smeso.it/feeds/all.rss.xml" class="mg-feed"><i class="uk-icon-rss uk-icon-medium"></i> RSS</a></li>
+                <!--/sse-->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</main>
+
+<footer class="mg-footer">
+    <div class="uk-container uk-container-center uk-text-center">
+
+        <!--sse-->
+        <div class="mg-icons-small uk-subnav uk-visible-small">
+            <ul class="mg-icons-small uk-subnav uk-visible-small">
+            <li>
+                <a href="https://github.com/smeso" target="_blank" rel="noopener noreferrer" class="uk-icon-button uk-icon-github"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/smesoraca" target="_blank" rel="noopener noreferrer" class="uk-icon-button uk-icon-twitter"></a>
+            </li>
+            <li>
+                <a href="https://reddit.com/u/smesoraca" target="_blank" rel="noopener noreferrer" class="uk-icon-button uk-icon-reddit"></a>
+            </li>
+            <li>
+                <a href="https://keybase.io/smeso" target="_blank" rel="noopener noreferrer" class="uk-icon-button uk-icon-user"></a>
+            </li>
+            <li>
+                <a href="/contact" class="uk-icon-button uk-icon-envelope"></a>
+            </li>
+            <li><a rel="alternate" type="application/atom+xml" href="https://smeso.it/feeds/all.atom.xml" class="uk-icon-button uk-icon-rss"></a></li>
+            <li><a rel="alternate" type="application/rss+xml" href="https://smeso.it/feeds/all.rss.xml" class="uk-icon-button uk-icon-rss"></a></li>
+            </ul>
+        </div>
+        <!--/sse-->
+
+        <div class="mg-author uk-panel">
+            <p class="uk-text-small">This site and its contents are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons by-nc-as 4.0 International License</a>, unless stated otherwise. <br> Powered by <a href="http://blog.getpelican.com">Pelican</a>.<br class="uk-visible-small"> Theme based on <a href="https://github.com/lucachr/pelican-mg">mg</a>.</p>
+        </div>
+    </div>
+</footer>
+
+<div id="mg-offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+
+        <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog_index.html">Blog</a></li>
+            <li><a href="https://sara.smeso.it">SARA</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="https://smeso.it/categories.html">Categories</a></li>
+            <li><a href="https://smeso.it/tags.html">Tags</a></li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://smeso.it/theme/js/jquery.min.js"></script>
+<script src="https://smeso.it/theme/js/uikit.min.js"></script>
+<script src="https://smeso.it/theme/js/jquery.sticky-kit.js"></script>
+<script src="https://smeso.it/theme/js/plugins.js"></script>
+<script src="https://smeso.it/theme/js/main.js"></script>
+
+
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                                                        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+ e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+ e.src='//www.google-analytics.com/analytics.js';
+ r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-107684972-1');ga('send','pageview');ga('set', 'anonymizeIp', true);
+</script>
+
+</body>
+</html>
